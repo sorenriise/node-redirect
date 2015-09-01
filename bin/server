@@ -4,5 +4,11 @@ var config = require("nconf")
 	.argv()
 	.file({file:__dirname+"/../config.json"});
 
+
 redirect = require('../lib/redirect')(config.get('redirects'), config.get('port'));
-console.log('redirect running on port %d', redirect.address().port);
+var addr = redirect.address();
+if (!addr) {
+   console.log("failed to listen on port %d", config.get('port'));
+   process.exit(-1);
+}
+console.log('redirect running on port %d', addr.port);

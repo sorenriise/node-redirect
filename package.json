@@ -1,39 +1,47 @@
 {
-  "name": "redirect",
-  "version": "0.2.0",
-  "author": "Pavan Kumar Sunkara <pavan.sss1991@gmail.com>",
-  "description": "A simple HTTP redirection server",
+  "name": "shortcode-redirect",
+  "version": "1.0.0",
+  "author": "Soren Riise",
+  "description": "A HTTP shortcode, redirection and tracking server",
   "main": "",
   "repository": {
     "type": "git",
-    "url": "git://github.com/pksunkara/node-redirect.git"
+    "url": "git://github.com/sorenriise/node-redirect.git"
   },
   "keywords": [
     "redirect",
     "302",
     "server",
     "http",
-    "simple"
+    "simple",
+    "shortcode",
+    "tracking"
   ],
-  "homepage": "http://pksunkara.github.com/node-redirect",
+  "homepage": "http://sorenriise.github.com/node-redirect",
   "scripts": {
     "start": "./bin/server"
   },
   "contributors": [
+    {
+      "name": "Soren Riise",
+      "email": "sorenriise@hotmail.com"
+    },
     {
       "name": "Pavan Kumar Sunkara",
       "email": "pavan.sss1991@gmail.com"
     }
   ],
   "dependencies": {
-    "nconf": "0.6.x"
+    "nconf": "0.6.x",
+    "log-writer": "0.0.9",
+    "mongodb": "^2.0.42"
   },
   "devDependencies": {},
   "engines": {
-    "node": ">=0.6"
+    "node": ">=0.10"
   },
   "bugs": {
-    "url": "https://github.com/pksunkara/node-redirect/issues"
+    "url": "https://github.com/sorenriise/node-redirect/issues"
   },
   "licenses": [
     {

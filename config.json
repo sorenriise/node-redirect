@@ -1,12 +1,26 @@
 {
-  "port": 80,
+  "mongodb":"mongodb://localhost:27017/yourdatabase",
+  "port": 8000,
   "redirects": {
+    "my.production.site.com": {
+      "code": 302,
+      "lookup": true,
+      "insert": {
+        "sharedsalt": "my secret salt",
+	"url": "/post"
+      }			
+    },
     "localhost": {
-      "host": "http://pksunkara.github.com",
-      "code": 302
+      "code": 302,
+      "lookup": true,
+      "insert": {
+        "sharedsalt": "my secret salt",
+	"url": "/newshortcode"
+      }			
     },
     "*": {
       "host": "http://www.google.com",
+      "keepurl": false,
       "code": 302
     }
   }
