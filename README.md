@@ -1,8 +1,8 @@
 # node-redirect
 
-Creates a server which redirects incoming traffic to another domain and tracks all the requests.
+Creates a server that redirects incoming traffic to another domain and tracks all the requests.
 
-This server alloows for a high voloume of redirect code where redirect codes are created programatically.
+This server allows for a high volume of redirect codes.  Redirect codes are created programatically.
 
 
 # Requirements
